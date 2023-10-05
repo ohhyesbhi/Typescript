@@ -111,3 +111,6 @@ let c2 : Icomplex = {
 
 c1 = c2 ; 
 console.log(c1)
+
+
+// NOTE -: WHEN IT COMES TO FUNCTIONS EVERYTHING SHOULD BE SAME

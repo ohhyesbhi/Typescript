@@ -84,3 +84,30 @@ console.log(c1)
 // REASON -: Because typescript will check for what do need for a variable to be a type complex and we can see that
 //           we just need real and imaginary and now let's check doees Icomplex has real and imaginary ? YES
 //           and if it has something extra it doesn't matter it will get assigned to c1
+
+
+
+//                            5)
+
+type complex = {real : number , imaginary : number}
+
+interface Icomplex{
+   real : number,
+   imaginary : number,
+   value : number 
+}
+
+let c1 : complex = {
+   real : 10,
+   imaginary : 10
+} 
+
+let c2 : Icomplex = {
+   real : 9,
+   imaginary : 9,
+    value  : 10 && "10" // this will give us the error because we have not defined type string in Icomplex so here no
+                        // cohersion or automatic conversions happen
+}
+
+c1 = c2 ; 
+console.log(c1)
